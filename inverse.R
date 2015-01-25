@@ -2,7 +2,6 @@
 # The script demonstrates the use of Lexical Scooping for calculating the
 # inverse of a matrix and caching this value into a variable to avoid 
 # calculating it more than once. 
-#
 # e.g. Run the following commands:
 # 	M <- makeCacheMatrix(matrix(4:7,nrow=2,ncol=2))
 # 	cacheSolve(M); cacheSolve(M)
