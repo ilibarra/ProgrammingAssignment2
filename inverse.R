@@ -28,10 +28,10 @@ makeCacheMatrix <- function(X = matrix()) {
 		 getinverse = getinverse)
 }
 
-### Calculate an inverse matrix from the output one. The result is
+### Calculate an inverse matrix from the input object. The result is
 ### stored into a cached variable 
 cacheSolve <- function(X, ...) {
-	## if the value has been calculated before, stop and return current I.
+	## if the value has been calculated before, stop and return current inverse.
 	I <- X$getinverse()
 	if(!is.null(I)) {
 		message("getting cached data")
